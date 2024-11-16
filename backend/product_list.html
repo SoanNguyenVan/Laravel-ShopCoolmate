@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<meta name="csrf-token" content="u1P7ORWF39B4OAIjbQq85ktBppb9If4SPiAHho59">
+<title>Danh Sách Sản Phẩm</title></head>
+
+<body>
+    <section class="mina-admin">
+        <div class="container-coolmate">
+            <div class="row-coolmate">
+                <div class="mina-admin-left">
+                    <div class="mina-admin-left-title">
+                        <img src="/backend/images/minacode.png" alt="">
+                        <h1>MinaCode</h1>
+                    </div>
+                    <div class="mina-admin-left-content">
+                        <ul>
+                            <li>
+                                <a href="index.html"><i class="ri-dashboard-line"></i>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="" class="a-contain-sub"><i class="ri-file-list-line"></i>Đơn Hàng<i class="ri-add-box-line"></i></a>
+                                <ul>
+                                    <div>
+                                        <li><a href="order_list.html"><i class="ri-arrow-drop-right-fill"></i>Danh Sách</a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="a-contain-sub" href=""><i class="ri-file-list-line"></i>Sản Phẩm<i
+                                        class="ri-add-box-line"></i></a>
+                                <ul>
+                                    <div>
+                                        <li><a href="product_list.html"><i class="ri-arrow-drop-right-fill"></i>Danh Sách</a></li>
+                                        <li><a href="product_add.html"><i class="ri-arrow-drop-right-fill"></i>Thêm </a></li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>               
+                </div>
+                <div class="mina-admin-right">
+                    <div class="mina-admin-right-top">
+                        <ul>
+                            <li><i class="ri-search-line"></i></li>
+                            <li><i class="ri-drag-move-line"></i></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="ri-notification-4-line"></i>
+                                <span>3</span>
+                            </li>
+                            <li>
+                                <i class="ri-message-2-line"></i>
+                                <span>5</span>
+                            </li>
+                            <li>
+                                <img src="images/minacode.png" alt="">
+                                <a href="">Mina<i class="ri-arrow-down-s-fill"></i></a>
+                            </li>
+                        </ul>                    
+                    </div>
+                    <div class="mina-admin-right-content">
+                        <div class="mina-admin-right-content-title">
+                           Danh Sách Sản Phẩm
+                        </div>
+                    <div class="mina-admin-right-content-main">
+                        <table class="main-table">
+                            <tr>
+                                <th>ID</th>
+                                <th>Ảnh</th>
+                                <th>Tên Sản Phẩm</th>
+                                <th>Giá Bán</th>
+                                <th>Giá Giảm</th>
+                                <th>Ngày Đăng</th>
+                                <th>Tùy Chỉnh</th>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td><img style="width: 70px;" src="/backend/storage/images/1698130522-product1.1.jpeg"></td>
+                                <td>T-Shirt Cotton 220GSM</td>
+                                <td>56,000</td>
+                                <td>30,000</td>
+                                <td>2023-10-27 01:52:24</td>
+                                <td>
+                                    <a class="table-button" href="/admin/product/edit/18">Sửa</a>|<a class="table-button-red" onclick="removerow(18,'/admin/product/delete')" href="#">Xóa</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td><img style="width: 70px;" src="/backend/storage/images/1698130628-product2.1.jpeg" alt=""></td>
+                                <td>T-Shirt Cotton 220GSM</td>
+                                <td>125,000</td>
+                                <td>120,000</td>
+                                <td>2023-10-27 02:04:58</td>
+                                <td>
+                                    <a class="table-button" href="/admin/product/edit/17">Sửa</a>|<a class="table-button-red" onclick="removerow(17,'/admin/product/delete')" href="#">Xóa</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td><img style="width: 70px;" src="/backend/storage/images/1699194897-product1.1.jpeg" alt=""></td>
+                                <td>T-Shirt Cotton 420GSM</td>
+                                <td>200,000</td>
+                                <td>129,000</td>
+                                <td>2023-10-27 02:05:19</td>
+                                <td>
+                                    <a class="table-button" href="/admin/product/edit/16">Sửa</a>|<a class="table-button-red" onclick="removerow(16,'/admin/product/delete')" href="#">Xóa</a>
+                                </td>
+                            </tr>          
+                        </table>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </section>
+<footer>
+ <!-- Js -->
+<script src="js/main.js"></script>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Coolmate-Product</title>
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="container">
+            <div class="row-flex">
+                <div class="header-bar-icon">
+                    <i class="ri-menu-line"></i>
+                </div>
+                <div class="header-logo">
+                    <img src="asset/images/logo.png" alt="">
+                </div>
+                <div class="header-logo-mobile">
+                    <img src="asset/images/logomobile.png" alt="">
+                </div>
+                <div class="header-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="">SẢN PHẨM</a></li>
+                            <li><a href="">ĐỒ LÓT</a></li>
+                            <li><a href="">MẶC HẰNG NGÀY</a></li>
+                            <li><a href="">ĐỒ THỂ THAO</a></li>
+                            <li><a href="">SẢN XUẤT RIÊNG</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-search">
+                    <input type="text" placeholder="Tìm kiếm" >
+                    <i class="ri-search-line"></i>
+                </div>
+                <div class="header-cart">
+                    <i class="ri-shopping-cart-line" number = "0"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- product-detail  -->
+  <section class="cart-section p-to-top">
+    <div class="container">
+        <div class="row-flex row-flex-product-detai">
+            <p >Giỏ hàng</p>
+        </div>
+        <div class="row-grid">
+            <div class="cart-section-left">
+                <h2 class="main-h2">Chi tiết Đơn hàng</h2>
+                <div class="cart-section-left-detail">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ảnh</th>
+                                <th>Sản Phẩm</th>
+                                <th>Thành Tiền</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img style="width: 70px;" src="asset/images/product1.1.jpeg" alt=""></td>
+                                <td>
+                                    <div class="product-deatail-right-infor">
+                                        <h1>T-Shirt Cotton 220GSM</h1>
+                                        <div class="product-item-price">
+                                            <p>30,000<sup>đ</sup> <span>56,000<sup>đ</sup></span> </p>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-deatail-right-quantity-input">
+                                    <i class="ri-subtract-line"></i>
+                                    <input  onKeyDown="return false" class="quantity-input" type="number" value="1">
+                                    <i class="ri-add-line"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>224,000<sup>đ</sup></p>
+                                </td>
+                                <td>Xóa</td>
+                            </tr>
+                            <tr>
+                                <td><img style="width: 70px;" src="asset/images/product2.1.jpeg" alt=""></td>
+                                <td>
+                                    <div class="product-deatail-right-infor">
+                                        <h1>T-Shirt Cotton 220GSM</h1>
+                                        <div class="product-item-price">
+                                            <p>30,000<sup>đ</sup> <span>56,000<sup>đ</sup></span> </p>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-deatail-right-quantity-input">
+                                    <i class="ri-subtract-line"></i>
+                                    <input  onKeyDown="return false" class="quantity-input" type="number" value="1">
+                                    <i class="ri-add-line"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>224,000<sup>đ</sup></p>
+                                </td>
+                                <td>Xóa</td>
+                            </tr>
+                            <tr>
+                                <td><img style="width: 70px;" src="asset/images/product3.1.jpeg" alt=""></td>
+                                <td>
+                                    <div class="product-deatail-right-infor">
+                                        <h1>T-Shirt Cotton 220GSM</h1>
+                                        <div class="product-item-price">
+                                            <p>30,000<sup>đ</sup> <span>56,000<sup>đ</sup></span> </p>
+                                        </div>
+                                   </div>
+
+                                   <div class="product-deatail-right-quantity-input">
+                                    <i class="ri-subtract-line"></i>
+                                    <input  onKeyDown="return false" class="quantity-input" type="number" value="1">
+                                    <i class="ri-add-line"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>224,000<sup>đ</sup></p>
+                                </td>
+                                <td>Xóa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <button class="main-btn">Cập nhật Giỏ hàng</button>
+                    <a style="color: crimson; font-style: italic;" href="">>>Tiếp tục Mua hàng</a>
+                </div>
+            </div>
+            <div class="cart-section-right">
+                <h2 class="main-h2">Thông tin Giao hàng</h2>
+                <div class="cart-section-right-input-name-phone">
+                    <input type="text" placeholder="Tên" name="" id="">
+                    <input type="text" placeholder="Điện thoại" name="" id="">
+                </div>
+                <div class="cart-section-right-input-email">
+                    <input type="text" placeholder="Email" name="" id="">
+                </div>
+                <div class="cart-section-right-select">
+                    <select name="" id="city">
+                        <option value="">Tỉnh/Tp</option>
+                    </select>
+                    <select name="" id="district">
+                        <option value="">Quận/huyện</option>
+                    </select>
+                    <select name="" id="ward">
+                        <option value="">Phường/xã</option>
+                    </select>
+                </div>
+                <div class="cart-section-right-input-adress">
+                    <input type="text" placeholder="Địa chỉ" name="" id="">
+                </div>
+                <div class="cart-section-right-input-note">
+                    <input type="text" placeholder="Ghi chú" name="" id="">
+                </div>
+                <button class="main-btn">Gửi Đơn Hàng</button>
+            </div>
+        </div>
+    </div>
+  </section>
+    <!--hot-product  -->
+    <section class="hot-products">
+        <div class="container">
+            <div class="row-grid">
+                <p class="heading-text">Sản Phẩm Mới</p>
+            </div>
+            <div class="row-grid row-grid-hot-products">
+                <div class="hot-product-item">
+                    <a href=""><img src="asset/images/product1.1.jpeg" alt=""></a>
+                    <p><a href="">T-Shirt Cotton 220GSM</a></p>
+                    <span>100% Cotton</span>
+                    <div class="hot-product-item-price">
+                        <p>30,000<sup>đ</sup> <span>56,000<sup>đ</sup></span> </p>
+                    </div>
+                </div>
+                <div class="hot-product-item">
+                    <a href=""><img src="asset/images/product2.1.jpeg" alt=""></a>
+                    <p><a href="">T-Shirt Cotton 220GSM</a></p>
+                    <span>100% Cotton</span>
+                    <div class="hot-product-item-price">
+                        <p>30,000<sup>đ</sup> <span>56,000<sup>đ</sup></span> </p>
+                    </div>
+                </div>
+                <div class="hot-product-item">
+                    <a href=""><img src="asset/images/product3.1.jpeg" alt=""></a>
+                    <p><a href="">T-Shirt Cotton 220GSM</a></p>
+                    <span>100% Cotton</span>
+                    <div class="hot-product-item-price">
+                        <p>30,000<sup>đ</sup> <span>56,000<sup>đ</sup></span> </p>
+                    </div>
+                </div>
+                <div class="hot-product-item">
+                    <a href=""><img src="asset/images/product4.1.webp" alt=""></a>
+                    <p><a href="">T-Shirt Cotton 220GSM</a></p>
+                    <span>100% Cotton</span>
+                    <div class="hot-product-item-price">
+                        <p>30,000<sup>đ</sup> <span>56,000<sup>đ</sup></span> </p>
+                    </div>
+                </div>
+                <div class="hot-product-item">
+                    <a href=""><img src="asset/images/product5.1.webp" alt=""></a>
+                    <p><a href="">T-Shirt Cotton 220GSM</a></p>
+                    <span>100% Cotton</span>
+                    <div class="hot-product-item-price">
+                        <p>30,000<sup>đ</sup> <span>56,000<sup>đ</sup></span> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row-grid">
+                <div class="footer-item">
+                    <p>COOLCLUB</p>
+                    <p>Đăng kí thành viên</p>
+                    <p>Ưu đãi & Đặc quyền</p>
+                </div>
+                <div class="footer-item">
+                    <p>CHÍNH SÁCH</p>
+                    <p>Chính sách đổi trả 60 ngày</p>
+                    <p>Chính sách khuyến mãi</p>
+                    <p>Chính sách bảo mật</p>
+                    <p>Chính sách giao hàng</p>
+                </div>
+                <div class="footer-item">
+                    <p>CHĂM SÓC KHÁCH HÀNG</p>
+                    <p>Trải nghiệm mua sắm 100% hài lòng</p>
+                    <p>Hỏi đáp - FAQs</p>
+                </div>
+                <div class="footer-item">
+                    <p>ĐỊA CHỈ LIÊN HỆ</p>
+                    <p>Văn phòng Hà Nội: Tầng 3-4, Tòa nhà BMM, KM2, Đường Phùng Hưng, Phường Phúc La, Quận Hà Đông, TP Hà Nội</p>
+                    <p>Văn phòng Tp HCM: Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="asset/js/apiprovince.js"></script>
+    <script src="asset/js/script.js"></script>
+</body>
+</html>

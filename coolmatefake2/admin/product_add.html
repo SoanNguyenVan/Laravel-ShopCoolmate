@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/ckeditor5_col/styles.css">
+    <title>Coolmatefake-Admin</title>
+</head>
+<body>
+    <section class="admin">
+        <div class="row-grid">
+            <div class="admin-sidebar">
+                <div class="admin-sidebar-top">
+                    <img src="/asset/images/minacode.png" alt="">
+                </div>
+                <div class="admin-sidebar-content">
+                    <ul>
+                        <li><a href=""><i class="ri-dashboard-line"></i>Dashboard<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Tổng Quan</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="ri-file-list-line"></i>Đơn Hàng<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="ri-file-list-line"></i>Sản Phẩm<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Thêm</a></li>
+                                </div>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-content">
+                <div class="admin-content-top">
+                    <div class="admin-content-top-left">
+                        <ul class="flex-box">
+                            <li><i class="ri-search-line"></i></li>
+                            <li><i class="ri-drag-move-line"></i></li>
+                        </ul>
+                    </div>
+                    <div class="admin-content-top-right">
+                        <ul class="flex-box">
+                            <li><i class="ri-notification-4-line" number="3"></i ></li>
+                            <li><i class="ri-message-2-line" number="5"></i></li>
+                            <li class="flex-box">
+                                <img style="width: 50px;" src="asset/images/minacode.png" alt="">
+                                <p>Mina<i class="ri-arrow-down-s-fill"></i></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="admin-content-main">
+                    <div class="admin-content-main-title">
+                        <h1>Thêm Sản Phẩm</h1>
+                    </div>
+                    <div class="admin-content-main-content">
+                        <!-- NỘi dung nằm ở đây -->
+                       <div class="admin-content-main-content-product-add">
+                            <div class="admin-content-main-content-left">
+                                <div class="admin-content-main-content-two-input">
+                                    <input type="text" placeholder="Tên sản phẩm">
+                                    <input type="text" placeholder="Chất liệu">
+                                </div>
+                                <div class="admin-content-main-content-two-input">
+                                    <input type="text" placeholder="Giá bán">
+                                    <input type="text" placeholder="Giá giảm">
+                                </div>
+                                <textarea class="editor_des" name="" id="">Đặc điểm nổi bật</textarea>
+                                <!-- <textarea class="editor_content" name="" id="">Mô tả sản phẩm</textarea> -->
+                                <br>
+                                <button class="main-btn">Thêm Sản Phẩm</button>
+                            </div>
+                            <div class="admin-content-main-content-right">
+                                <div class="admin-content-main-content-right-image">
+                                    <label for="file">Ảnh Đại Diện</label>
+                                    <input id="file" type="file">
+                                    <div class="image-show">
+
+                                    </div>
+                                </div>
+                                <div class="admin-content-main-content-right-images">
+                                    <label for="files">Ảnh Sản Phẩm</label>
+                                    <input id="files" type="file">
+                                    <div class="images-show">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="asset/ckeditor5_col/ckeditor.js"></script>
+    <script src="asset/ckeditor5_col/script.js"></script>
+    <script src="asset/js/script.js"></script>
+</body>
+</html>

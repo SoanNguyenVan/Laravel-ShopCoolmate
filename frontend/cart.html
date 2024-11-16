@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<title>Giỏ Hàng</title></head>
+
+<body>
+    <style> 
+        .alert-container {
+            background-color: #E8E8E8;
+          
+            border-radius: 10px;
+        }
+        .alert-container ul {
+            padding: 12px 0 12px 24px;
+        }
+            .alert-container li {
+                list-style: unset;
+                color: red;
+                font-size: 12px
+            }
+            .alert-container li::marker {
+                color: red
+            }
+    </style>
+<header>
+    <div class="container">
+        <div class="row-flex row-flex-header">
+            <div class="header-bar-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header-logo">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="header-logo-mobile">
+                <a href=""><img src="images/logomobile.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">SẢN PHẨM</a></li>
+                    <li><a href=""> ĐỒ LÓT</a></li>
+                    <li><a href="">MẶC HẰNG NGÀY</a></li>
+                    <li><a href="">ĐỒ THỂ THAO</a></li>
+                    <li><a href="">SẢN XUẤT RIÊNG</a></li>
+                    <li><a href="">CARE&SHARE</a></li>
+                </ul>
+            </nav>
+            <div class="header-search">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>
+                    3
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-cart-box">
+                <ul>
+                    <li>
+                        <img src="images/1698372548-newcacoa3-3.webp" alt="">
+                        <div class="header-cart-box-text">
+                            <div class="header-cart-box-text-top">
+                                <h1 class="h1-product-smaller">
+                                    T-Shirt Cotton 220GSM
+                                </h1>
+                                <span class="span-product-smaller">
+                                    100%|Cotton
+                                </span>
+                            </div>
+                            <div class="header-cart-box-text-bottom">
+                                <p class="p-product-smaller">56,000đ<span class="span-product-smaller"
+                                        style="text-decoration: line-through; margin-left: 3px;">30,000đ</span> </p>
+                                <p class="p-product-smaller">SL: 1</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/1698130619-product2.1.jpeg" alt="">
+                        <div class="header-cart-box-text">
+                            <div class="header-cart-box-text-top">
+                                <h1 class="h1-product-smaller">
+                                    T-Shirt Cotton 220GSM
+                                </h1>
+                                <span class="span-product-smaller">
+                                    100%|Cotton
+                                </span>
+                            </div>
+                            <div class="header-cart-box-text-bottom">
+                                <p class="p-product-smaller">125,000đ<span class="span-product-smaller"
+                                        style="text-decoration: line-through; margin-left: 3px;">120,000đ</span> </p>
+                                <p class="p-product-smaller">SL: 4</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/1698130496-product1.1.jpeg" alt="">
+                        <div class="header-cart-box-text">
+                            <div class="header-cart-box-text-top">
+                                <h1 class="h1-product-smaller">
+                                    T-Shirt Cotton 220GSM
+                                </h1>
+                                <span class="span-product-smaller">
+                                    100%|Cotton
+                                </span>
+                            </div>
+                            <div class="header-cart-box-text-bottom">
+                                <p class="p-product-smaller">56,000đ<span class="span-product-smaller"
+                                        style="text-decoration: line-through; margin-left: 3px;">30,000đ</span> </p>
+                                <p class="p-product-smaller">SL: 1</p>
+                            </div>
+                        </div>
+                    </li>
+                            </ul>
+            <a href="cart.html"><button class="main-button">Giỏ Hàng</button></a>
+               
+    </div>
+</header>    
+    
+        <!-- --------------Cart----------------- -->
+ <section class="cart p-t-100">
+    <div class="container">
+        <div class="row-grid row-grid-one-item ">
+            <div class="text-title">
+                Giỏ Hàng
+            </div>
+        </div>
+        <div class="row-grid row-grid-cart">
+            <div class="cart-left">
+                        <h2 class="h2-title">Chi Tiết Đơn Hàng</h2>
+                        <table>
+                            <tr>
+                                <th>Ảnh</th>
+                                <th>Sản phẩm</th>
+                                <th>Thành Tiền</th>
+                                <th>Xóa</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/1698372548-newcacoa3-3.webp" alt="">
+                                </td>
+                                <td>
+                                    <h1 class="h1-product-smaller">
+                                        T-Shirt Cotton 220GSM
+                                    </h1>
+                                    <p class="p-product-smaller">56,000đ<span
+                                            style="text-decoration: line-through; font-size: smaller;margin-left: 12px;font-weight: 300;"> 30,000đ</span>
+                                    </p>
+                                    <div class="product-detail-quantity">
+                                        <i class="fa-solid fa-minus"></i>
+                                        <input onKeyDown="return false" type="number" name="product_id[14]" value="1">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="p-product">
+                                    56,000
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/1698130619-product2.1.jpeg" alt="">
+                                </td>
+                                <td>
+                                    <h1 class="h1-product-smaller">
+                                        T-Shirt Cotton 220GSM
+                                    </h1>
+                                    <p class="p-product-smaller">125,000đ<span
+                                            style="text-decoration: line-through; font-size: smaller;margin-left: 12px;font-weight: 300;"> 120,000đ</span>
+                                    </p>
+                                    <div class="product-detail-quantity">
+                                        <i class="fa-solid fa-minus"></i>
+                                        <input onKeyDown="return false" type="number" name="product_id[17]" value="4">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="p-product">
+                                    500,000
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/1698130496-product1.1.jpeg" alt="">
+                                </td>
+                                <td>
+                                    <h1 class="h1-product-smaller">
+                                        T-Shirt Cotton 220GSM
+                                    </h1>
+                                    <p class="p-product-smaller">56,000đ<span
+                                            style="text-decoration: line-through; font-size: smaller;margin-left: 12px;font-weight: 300;"> 30,000đ</span>
+                                    </p>
+                                    <div class="product-detail-quantity">
+                                        <i class="fa-solid fa-minus"></i>
+                                        <input onKeyDown="return false" type="number" name="product_id[18]" value="1">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="p-product">
+                                    56,000
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                                </td>
+                            </tr>
+                            <tr style="font-weight: bolder; background-color: var(--sub-color);">
+                                <th style="text-align: center;" colspan="2">Tổng Tiền</th>
+                                <th style="text-align: left;">612,000đ</th>
+                                <th></th>
+                            </tr>
+                        </table>
+                        <button formaction="" class="main-button">
+                            Cập Nhật Giỏ Hàng
+                        </button>
+                        <a class="buying-continue" href="index.html"> >>Tiếp Tục Mua Hàng</a>
+            </div>
+            <div class="cart-right">
+                <div class="alert-container">
+                </div>                          
+                <h2 class="h2-title">
+                    Thông Tin Giao Hàng
+                </h2>
+                <div class="name-phone">
+                    <input type="text" name="name" value="" placeholder="Tên">
+                    <input type="text" name="phone" value="" placeholder="Điện thoại">
+                </div>
+                    <input type="text" name="email" value="" placeholder="Email">
+                <div class="province-district-ward">
+                    <select name="city" id="city">
+                        <option value="">Tỉnh/Tp</option>
+                    </select>
+                    <select name="district" id="district">
+                        <option value="">Quận/Huyện</option>
+                    </select>
+                    <select name="ward" id="ward">
+                        <option value="">Phường/Xã</option>
+                    </select>
+                </div>
+                    <input type="text" name="address" value="" placeholder="Địa chỉ">
+                    <input type="text" name="note" value=""  placeholder="Ghi chú">
+                    <a href="confirm.html"><button class="main-button">Gửi Đơn Hàng</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- --------------Product-------------- -->
+<section class="product">
+    <div class="container">
+        <div class="row-flex">
+            <div class="text-title">
+                Sản Phẩm Mới
+            </div>
+        </div>
+        <div class="row-grid row-grid-product">
+                <div class="product-item">
+                    <img src="images/1698130496-product1.1.jpeg" alt="">
+                    <a href="product.html">
+                        <h1 class="h1-product">T-Shirt Cotton 220GSM</h1>
+                    </a>
+                    <span class="span-product">100% Cotton</span>
+                    <p class="p-product">56,000đ<span style="text-decoration: line-through;">30,000đ</span> </p>
+                </div>
+                <div class="product-item">
+                    <img src="images/1698130619-product2.1.jpeg" alt="">
+                    <a href="product.html">
+                        <h1 class="h1-product">T-Shirt Cotton 220GSM</h1>
+                    </a>
+                    <span class="span-product">100% Cotton</span>
+                    <p class="p-product">125,000đ<span style="text-decoration: line-through;">120,000đ</span> </p>
+                </div>
+                <div class="product-item">
+                    <img src="images/1698130651-product3.1.jpeg" alt="">
+                    <a href="product.html">
+                        <h1 class="h1-product">T-Shirt Cotton 420GSM</h1>
+                    </a>
+                    <span class="span-product">100% Cotton</span>
+                    <p class="p-product">200,000đ<span style="text-decoration: line-through;">129,000đ</span> </p>
+                </div>
+                <div class="product-item">
+                    <img src="images/1698372538-IMG_6130_91.webp" alt="">
+                    <a href="product.html">
+                        <h1 class="h1-product">T-Shirt Cotton 120GSM</h1>
+                    </a>
+                    <span class="span-product">100% Cotton</span>
+                    <p class="p-product">56,000đ<span style="text-decoration: line-through;">30,000đ</span> </p>
+                </div>
+                <div class="product-item">
+                    <img src="images/1698372548-newcacoa3-3.webp" alt="">
+                    <a href="product.html">
+                        <h1 class="h1-product">T-Shirt Cotton 220GSM</h1>
+                    </a>
+                    <span class="span-product">100% Cotton</span>
+                    <p class="p-product">56,000đ<span style="text-decoration: line-through;">30,000đ</span> </p>
+                </div>
+            </div>
+    </div>
+</section>    
+    <!-- --------------footer---------------------- -->
+    <footer>
+    <div class="container">
+        <div class="row-grid row-grid-footer">
+            <div class="footer-item">
+                <h2 class="h2-title">COOLCLUB</h2>
+                <ul>
+                    <li>Đăng kí thành viên</li>
+                    <li>Ưu đãi & Đặc quyền</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2 class="h2-title"> CHÍNH SÁCH</h2>
+                <ul>
+                    <li>Chính sách đổi trả 60 ngày</li>
+                    <li>Chính sách khuyến mãi</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Chính sách giao hàng</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2 class="h2-title"> CHĂM SÓC KHÁCH HÀNG</h2>
+                <ul>
+                    <li>Trải nghiệm mua sắm 100% hài lòng</li>
+                    <li>Hỏi đáp - FAQs</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2 class="h2-title">ĐỊA CHỈ LIÊN HỆ</h2>
+                <ul>
+                    <li>Văn phòng Hà Nội: Tầng 3-4, Tòa nhà BMM, KM2, Đường Phùng Hưng, Phường Phúc La, Quận Hà
+                        Đông, TP Hà Nội</li>
+                    <li>Văn phòng Tp HCM: Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí
+                        Minh</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="js/ApiProvince.js"></script>
+</footer>   
+
+
+   
+</body>
+
+</html>

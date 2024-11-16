@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Coolmatefake-Admin</title>
+</head>
+<body>
+    <section class="admin">
+        <div class="row-grid">
+            <div class="admin-sidebar">
+                <div class="admin-sidebar-top">
+                    <img src="/asset/images/minacode.png" alt="">
+                </div>
+                <div class="admin-sidebar-content">
+                    <ul>
+                        <li><a href=""><i class="ri-dashboard-line"></i>Dashboard<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Tổng Quan</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="ri-file-list-line"></i>Đơn Hàng<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="ri-file-list-line"></i>Sản Phẩm<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                                    <li><a href=""><i class="ri-arrow-right-s-fill"></i>Thêm</a></li>
+                                </div>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-content">
+                <div class="admin-content-top">
+                    <div class="admin-content-top-left">
+                        <ul class="flex-box">
+                            <li><i class="ri-search-line"></i></li>
+                            <li><i class="ri-drag-move-line"></i></li>
+                        </ul>
+                    </div>
+                    <div class="admin-content-top-right">
+                        <ul class="flex-box">
+                            <li><i class="ri-notification-4-line" number="3"></i ></li>
+                            <li><i class="ri-message-2-line" number="5"></i></li>
+                            <li class="flex-box">
+                                <img style="width: 50px;" src="asset/images/minacode.png" alt="">
+                                <p>Mina<i class="ri-arrow-down-s-fill"></i></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="admin-content-main">
+                    <div class="admin-content-main-title">
+                        <h1>Danh sách Đơn Hàng</h1>
+                    </div>
+                    <div class="admin-content-main-content">
+                        <!-- NỘi dung nằm ở đây -->
+                       <div class="admin-content-main-content-order-list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Tên</th>
+                                        <th>Phone</th>
+                                        <th>Email</th>
+                                        <th>Địa chỉ</th>
+                                        <th>Ghi chú</th>
+                                        <th>Chi tiết</th>
+                                        <th>Ngày</th>
+                                        <th>Trạng Thái</th>
+                                        <th>Tùy Biến</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Ngô Sỹ Nguyên</td>
+                                        <td>0973999949</td>
+                                        <td>minacode68@gmail.com</td>
+                                        <td>72, Hàm Nghi, Đà Nẵng</td>
+                                        <td>Giao nhanh</td>
+                                        <td>
+                                            <a class="edit-class" href="">Chi tiết</a>
+                                        </td>
+                                        <td>23/12/2023</td>
+                                        <td><a class="confirm-order" href="">Đã xác nhận</a></td>
+            
+                                        <td>
+                                            <a class="delete-class" href="">Xóa</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Ngô Nguyệt Cát</td>
+                                        <td>0973999999</td>
+                                        <td>minacode68@gmail.com</td>
+                                        <td>92, Hàm Nghi, Đà Nẵng</td>
+                                        <td>Giao chậm</td>
+                                        <td>
+                                            <a class="edit-class" href="">Chi tiết</a>
+                                        </td>
+                                        <td>23/12/2023</td>
+                                        <td><a class="non_confirm-order" href="">Chưa xác nhận</a></td>
+            
+                                        <td>
+                                            <a class="delete-class" href="">Xóa</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                       </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="asset/js/script.js"></script>
+</body>
+</html>
